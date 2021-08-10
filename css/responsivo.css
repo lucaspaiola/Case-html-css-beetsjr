@@ -1,0 +1,135 @@
+@media only screen and (min-width: 1058px) and (max-width: 1200px) {
+
+/* Header */
+.cabecalho-menu ul {
+   margin-right: -30px;
+}
+
+/* Index */
+.introducao h1, .introducao h2 {
+   margin-right: 0px;
+}
+
+.descricao-introducao p {
+   padding-right: 150px;
+   padding-left: 20px;
+}
+   
+}
+
+@media only screen and (min-width: 788px) and (max-width: 1057px) {
+
+/* Header */
+
+.cabecalho-superior {
+   padding-top: 25px;
+}
+
+.cabecalho-superior p:nth-child(1) {
+   margin-left: 0px;
+}
+
+.cabecalho-superior p:nth-child(2) {
+   margin-left: 50px;
+   margin-right: 0px;
+}
+
+.cabecalho-superior p {
+   font-size: 13px;
+   font-weight: 400;
+   margin: 0px 0 0 0;
+}
+
+.cabecalho-superior a {
+   font-size: 13px;
+   margin: 0 0 0 30px;
+   padding: 10px 20px 10px 20px;
+   border-radius: 20px;
+}
+
+.cabecalho-central img {
+   margin-left: 10px;
+}
+
+.cabecalho-menu ul {
+   margin-right: 0px;
+   margin-top: -50px;
+}
+
+.cabecalho-menu ul li a {
+   font-size: 14px;
+}
+
+/* Index */
+.descricao-introducao p {
+   font-size: 15px;
+   padding: 0 180px 10px 80px;
+}
+
+.introducao h1, .introducao h2 {
+   margin-right: 40px;
+}
+
+.lista-atendimentos ul li {
+   display: block;
+}
+
+.atendimentos-introducao h2::before {
+   width: 0px;
+}
+
+.atendimentos-introducao h2::after {
+   width: 0px
+}
+
+.convenios-introducao h2::after {
+   margin: -15px auto 0 auto;
+}
+
+.consultorio-introducao {
+   height: 900px;
+}
+
+.consultorio-introducao img {
+   width: 300px;
+   border-radius: 50px;
+   padding: 10px;
+   margin: 0 400px 0 230px;
+}
+
+.consultorio-introducao a {
+   padding: 12px 22px 12px 22px;
+   border-radius: 20px;
+   margin: 0px 0 0px 325px;
+   font-size: 15px;
+}
+
+#ultima-foto {
+   margin-bottom: 30px;
+}
+
+.solicitar-consulta a {
+   margin: 0px 0 0px 275px;
+}
+
+.convenios-introducao ul li img {
+   width: 200px;
+   margin-left: 20px;
+}
+
+
+/* Footer */
+.rodape p, .rodape strong {
+   font-size: 15px;
+}
+
+
+}
+
+/* Estilo para smartphone */
+@media only screen and (max-width: 787px) {
+
+
+
+
+}
