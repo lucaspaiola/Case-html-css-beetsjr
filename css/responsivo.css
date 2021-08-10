@@ -118,6 +118,43 @@
 }
 
 
+
+
+
+
+/* Contato */
+.contato h2::after {
+   margin: -15px auto 0 auto;
+}
+
+.formulario input, .formulario textarea {
+   width: 650px;
+}
+
+.formulario select {
+   width: 650px;
+}
+
+.contato-formulario p {
+   padding-right: 150px; 
+}
+
+.contato-informacoes {
+   margin-right: 20px;
+   margin-left: 180px;
+   text-align: center;
+}
+
+.contato-informacoes p, .contato-informacoes-direita p {
+   font-size: 15px;
+}
+
+.contato-informacoes-direita {
+   text-align: center;
+   margin-top: 30px;
+   margin-left: 210px;
+}
+
 /* Footer */
 .rodape p, .rodape strong {
    font-size: 15px;
