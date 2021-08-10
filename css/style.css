@@ -1,0 +1,705 @@
+/* Estilos Gerais */
+
+p {
+   font-size: 14px;
+   color: #525252;
+}
+
+h1, h2, h3, h4, p, a {
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+h2, h4, h3 {
+   text-align: center;
+}
+
+/* Header */
+
+header {
+   width: 100%;
+}
+
+.cabecalho-superior {
+   padding: 25px 0 5px 0;
+}
+
+.cabecalho-superior p {
+   display: inline-block;
+   font-size: 15px;
+   font-weight: 500;
+   color: #525252;
+   margin: -10px 0 0 0;
+}
+
+.cabecalho-superior p:nth-child(1) {
+   margin-left: -10px;
+}
+
+.cabecalho-superior p:nth-child(2) {
+   margin-left: 50px;
+   margin-right: 20px;
+}
+
+.cabecalho-superior a {
+   background-color: #6d5306;
+   color: white;
+   padding: 7px 20px 7px 20px;
+   border-radius: 20px;
+   font-size: 15px;
+   margin: 0 0 0 55px;
+   transition: .3s;
+}
+
+.cabecalho-superior a:hover {
+   background-color: #927e45;
+   transition: .3s;
+}
+
+.cabecalho-central {
+   box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 50%);
+   margin: 15px 0px 0px 0px;
+   height: 130px;
+}
+
+.cabecalho-central img {
+   width: 215px;
+   height: 75px;
+   margin: 30px 0 0 -10px;
+}
+
+.cabecalho-menu {
+   text-align: right;
+}
+
+.cabecalho-menu ul {
+   margin-right: -60px;
+   margin-top: -50px;
+}
+
+.cabecalho-menu ul li {
+   display: inline-block;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.cabecalho-menu ul li a {
+   color: #64722f;
+   padding: 12px;
+   font-weight: bold;
+   margin: 0 -2px 0 -2px;
+   transition: .3s;
+}
+
+.cabecalho-menu ul li a:hover {
+   background-color: #ececec;
+   transition: .3s;
+}
+
+#ativo {
+   background-color: #324300;
+   color: white;
+   transition: .3s;
+}
+
+#ativo:hover {
+   background-color: #657240;
+}
+
+/* Index */
+
+.introducao {
+   background: url(../img/banner_home.png) no-repeat left;
+   background-size: cover;
+   height: 380px;
+   margin-bottom: 20px;
+   box-shadow: inset 0px 3px 5px rgb(0 0 0 / 50%);
+}
+
+.introducao h1 {
+   text-align: right;
+   font-size: 42px;
+   font-weight: bold;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   padding-top: 100px;
+   margin-right: -90px;
+   line-height: 60px;
+}
+
+.introducao h2 {
+   text-align: right;
+   padding-top: 20px;
+   margin-right: -90px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   font-size: 15px;
+   color: #555150;
+   line-height: 25px;
+}
+
+/* Index - Descricao */
+
+.descricao-introducao {
+   padding: 50px 0 60px 0;
+   background: url(../img/folhas-home.png) no-repeat;
+   background-size: 26%;
+   background-position: center right;
+   height: 247px;
+}
+
+.descricao-introducao p {
+   padding: 20px 130px 0px 0px;
+   margin-left: -30px;
+   font-size: 18px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   color: #414141;
+   line-height: 29px;
+}
+
+.descricao-introducao strong {
+   color: #4F6900;
+   font-weight: bold;
+}
+
+.descricao-introducao span {
+   color: #993300;
+}
+
+#agradavel {
+   color: #6D5306;
+}
+
+/* Index - Atendimentos */
+
+.atendimentos-introducao {
+   margin-top: 70px;
+}
+
+.atendimentos-introducao h2 {
+   margin-bottom: 40px;
+   color: #6d5306;
+}
+
+.atendimentos-introducao h2::before {
+   content: "";
+   display: block;
+   width: 420px;
+   height: 1px;
+   background: #b2b2b2;
+   border: 2px dashed #fff;
+   margin: 0 0 -18px -35px;
+}
+
+.atendimentos-introducao h2::after {
+   content: "";
+   display: block;
+   width: 420px;
+   height: 1px;
+   background: #b2b2b2;
+   border: 2px dashed #fff;
+   margin: -18px 0 0px 570px;
+}
+
+.lista-atendimentos {
+   background-color: #f5ece1;
+   border-radius: 20px;
+}
+
+.atendimentos-introducao ul li {
+   padding: 30px 20px 20px 40px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   color: #525252;
+   font-size: 18px;
+}
+
+.atendimentos-introducao h2 {
+   font-size: 29px;
+}
+
+.atendimentos-introducao img {
+   width: 40px;
+}
+
+/* Index - Convenios */
+
+.convenios-introducao {
+   padding: 50px 0 50px 0;
+}
+
+.convenios-introducao h2 {
+   color: #352801;
+   font-size: 33px;
+   font-weight: bold;
+   margin-bottom: 7px;
+}
+
+.convenios-introducao h2::after {
+   content: "";
+   display: block;
+   width: 290px;
+   height: 13px;
+   background: #afc666;
+   border-radius: 15px;
+   margin: -15px 0 0 333px;
+}
+
+.convenios-introducao h3 {
+   padding: 40px 0 20px 0;
+   color: #525252;
+   font-size: 18px;
+}
+
+.convenios-introducao h4 {
+   color: #525252;
+   font-size: 27px;
+}
+
+.convenios-introducao ul li {
+   display: inline;
+}
+
+.convenios-introducao ul li img {
+   width: 200px;
+   margin-left: 50px;
+}
+
+/* Index - Consultorio */
+
+.consultorio-introducao {
+   background-color: #ebf1ce;
+   height: 450px;
+   margin-bottom: 50px;
+}
+
+.consultorio-introducao h2 {
+   color: #525252;
+   font-weight: bold;
+   font-size: 33px;
+   padding: 25px 0 10px 0;
+}
+
+.consultorio-introducao p {
+   color: #525252;
+   font-size: 26px;
+   text-align: center;
+}
+
+.consultorio-introducao img {
+   width: 300px;
+   border-radius: 50px;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.consultorio-introducao a {
+   padding: 12px 24px 12px 24px;
+   background-color: rgb(194, 246, 102);
+   color: rgb(79, 105, 0);
+   border-radius: 15px;
+   margin: 0px 0 0 425px;
+   font-weight: bold;
+   transition: .3s;
+}
+
+.consultorio-introducao a:hover {
+   opacity: 0.8;
+}
+
+
+/* Solicitar consulta */
+
+.solicitar-consulta {
+   height: 40px;
+}
+
+.solicitar-consulta a {
+   margin: 0px 0 0px 379px;
+   padding: 15px 30px 15px 30px;
+   background-color: #6f9202;
+   color: white;
+   border-radius: 10px;
+   font-weight: 500;
+   transition: .3s;
+}
+
+.solicitar-consulta a:hover {
+   opacity: 0.8;
+}
+
+/* Servicos */
+
+.servicos {
+   background: url(../img/banner_servicos.png);
+   background-size: cover;
+   height: 323px;
+   margin-bottom: 20px;
+   box-shadow: inset 0px 3px 5px rgb(0 0 0 / 50%);
+}
+
+.servicos h1 {
+   font-size: 42px;
+   font-weight: bold;
+   text-align: center;
+   padding: 120px 0 30px 0;
+   line-height: 58px;
+}
+
+.servicos h2 {
+   color: #525252;
+   font-size: 15px;
+}
+
+.descricao-servicos strong {
+   color: #6f9202;
+   font-weight: bold;
+}
+
+.descricao-servicos span {
+   color: #b87728;
+}
+
+.descricao-servicos p {
+   padding: 40px 150px 30px 170px;
+   line-height: 29px;
+   font-size: 18px;
+   text-align: center;
+}
+
+.descricao-servicos img {
+   width: 420px;
+   height: 280px;
+   margin-left: -65px;
+}
+
+.descricao2-servicos p {
+   text-align: left;
+   margin: -210px -190px 0 250px;
+}
+
+.descricao2-servicos strong {
+   color: #92d122;
+}
+
+.atendimentos-servicos {
+   margin-top: 150px;
+}
+
+.atendimentos-servicos h3 {
+   text-align: left;
+   color: #4f6900;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 38px;
+   margin: -60px 0 0 55px;
+   padding: 10px;
+}
+
+.atendimentos-servicos p {
+   line-height: 29px;
+   padding: 10px 0 0 0;
+}
+
+.consultorio-servicos h2 {
+   color: #4f6900;
+   font-weight: bold;
+   font-size: 33px;
+   padding: 70px 0 10px 0;
+}
+
+.consultorio-servicos p {
+   color: #6d5306;
+   font-size: 16.8px;
+   text-align: center;
+}
+
+.consultorio-servicos img {
+   width: 350px;
+   height: 275px;
+   border-radius: 65px;
+   padding: 40px;
+   margin-bottom: 20px;
+}
+
+/* Contato */
+
+.contato h2 {
+   color: #352801;
+   font-size: 33px;
+   font-weight: bold;
+   margin: 60px 0 7px 0;
+}
+
+.contato h2::after {
+   content: "";
+   display: block;
+   width: 290px;
+   height: 13px;
+   background: #afc666;
+   border-radius: 15px;
+   margin: -15px 0 0 333px;
+}
+
+.contato p {
+   padding: 25px 60px 20px 60px;
+   text-align: center;
+   font-size: 18px;
+   line-height: 29px;
+}
+
+.contato b {
+   color: #6d5306;
+}
+
+/* Contato - formulario */
+
+.formulario {
+   padding: 20px 0 70px 70px;
+   color: #525252;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   font-size: 14px;
+}
+
+.formulario input, .formulario textarea {
+   width: 798px;
+   height: 36px;
+   padding: 7px px 0 0;
+   margin: 10px 0 30px 5px;
+   display: block;
+   background-color: #00000000;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid rgb(189, 188, 188);
+}
+
+.formulario select {
+   color: #525252;
+   width: 798px;
+   height: 36px;
+   padding: 7px px 0 0;
+   margin: 10px 0 20px 0;
+   display: block;
+   border-radius: 15px;
+}
+
+.formulario textarea {
+   height: 150px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   color: #9e9e9e;
+}
+
+.contato-formulario a {
+   color: #6f9202;
+   text-decoration: underline;
+   font-weight: 700;
+   transition: .3s;
+}
+
+.contato-formulario a:hover {
+   opacity: 0.7;
+}
+
+.contato-formulario p {
+   font-size: 14px;
+   color: #3c4858; 
+}
+
+.btn {
+   background-color: #6f9202;
+   color: #fff;
+   border-radius: 20px;
+   font-size: 14px;
+   border: none;
+   padding: 8px 12px 8px 12px;
+   margin: 20px 0 0 0px;
+   transition: .3s;
+}
+
+.btn:hover {
+   box-shadow: 1px 3px 10px #9e9e9e;
+}
+
+.btn:hover {
+   box-shadow: #525252;
+}
+
+/* Contato - informacoes */
+
+.contato-informacoes {
+   padding: 0 0 0px 50px;
+}
+
+.contato-informacoes p, .contato-informacoes-direita p {
+   font-size: 18px;
+   line-height: 29px;
+   padding: 0 0 10px 0;
+}
+
+.contato-informacoes p:nth-child(2) {
+   padding-bottom: 40px;
+}
+
+.contato-informacoes-direita p:nth-child(3) {
+   padding-bottom: 30px;
+}
+
+.contato-informacoes-direita img {
+   width: 30px;
+   margin-right: 20px;
+   transition: .3s;
+}
+
+.contato-informacoes-direita img:hover  {
+   opacity: 0.7;
+}
+
+/* Politica de Privacidade */
+
+.privacidade {
+   color: #525252;
+   font-size: 18px;
+   line-height: 29.124px;
+   margin: 0 80px 0 80px;
+}
+
+.privacidade ol {
+   list-style: decimal;
+}
+
+.privacidade ol li {
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   margin: 0 0 0px 60px;
+}
+
+.privacidade ol li:last-child {
+   padding-bottom: 20px;
+}
+
+.privacidade ol li a {
+   color: #6f9202;
+   transition: .1s;
+}
+
+.privacidade ol li a:hover {
+   opacity: 0.8;
+}
+
+.sub-listas-privacidade ul {
+   list-style-type: circle;
+}
+
+.privacidade h2 {
+   text-align: left;
+   font-weight: 700;
+   font-size: 25px;
+   padding: 30px 0 10px 20px;
+}
+
+#privacidade-h2 {
+   margin-top: 40px;
+   font-size: 33px;
+}
+
+#p-privacidade-intro {
+   margin: 0 0 10px 20px;
+}
+
+.privacidade p {
+   margin: 10px 0 10px 20px;
+}
+
+.p-superior {
+   margin: 10px 0 10px 20px;
+}
+
+
+/* Footer */
+
+.rodape {
+   background-color: #6d5306;
+   margin-top: 50px;
+}
+
+.rodape a {
+   color: #fff;
+}
+
+.rodape a:hover {
+   color: #dad4c0;
+   transition: .3s;
+}
+
+.rodape p, .rodape strong {
+   color: white;
+   font-size: 18px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   padding: 15px 0 10px 0;
+   line-height: 25px;
+}
+
+.coluna-central p {
+   margin-left: -50px;
+}
+
+.logo-rodape img {
+   width: 280px;
+   height: 280px;
+   margin-left: -40px;
+   transition: .3s;
+}
+
+.logo-rodape img:hover, .icones-redes img:hover{
+   opacity: 0.7;
+}
+
+.icones-redes img {
+   width: 30px;
+   margin-right: 20px;
+   transition: .3s;
+}
+
+
+#creditos {
+   font-size: 15px;
+}
+
+/* JavaScript */
+
+[data-slide] {
+   position: relative;
+}
+
+[data-slide] > * {
+   position: absolute;
+   top: 0px;
+   opacity: 0;
+}
+
+[data-slide] > .active {
+   position: relative;
+   opacity: 1;
+   transition: fade-in 500ms;
+   z-index: 1;
+}
+ 
+[data-slide-nav] {
+   display: block;
+   justify-content: center;
+   text-align: center;
+   margin-top: 0px;
+}
+
+[data-slide-nav] > button {
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-left: 7px;
+   margin-right: 7px;
+   border: none;
+   padding: 0px;
+   border-radius: 6px;
+   background: #ebeaea;
+   text-indent: -100px;
+   overflow: hidden;
+}
+
+[data-slide-nav] > button.active {
+   background: #9a9797;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>New Life | Contato - Solicite um agendamento</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/grid.css">
+   <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+   <div class="cabecalho-superior">
+      <div class="container">
+         <p class="grid-8">Clínica de Psicologia, Psicopedagogia e Neuropsicologia</p>
+         <p class="grid-4">(11) 98298-6269</p>
+         <p class="grid-4"><a href="#">Solicitar cotação</a></p>
+      </div>
+   </div>
+
+   <header class="cabecalho-central">
+      <div class="container">
+         <a href="index.html"><img src="img/Logo Horizontal (colorido)-header.png" alt="Logo da New Life"></a>
+         <nav class="cabecalho-menu">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#">Quem somos</a></li>
+               <li><a href="servicos.html">Serviços</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a id="ativo" href="contato.html">Contato</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <div class="container contato">
+      <h2>Entre em contato</h2>
+      <p>Preencha o formulário abaixo para <b>Solicitar uma Cotação/Agendamento</b>, tirar dúvidas ou tratar assuntos sobre parcerias, etc.</p>
+   </div>
+
+   <div class="container contato-formulario">
+      <form id="contato_form" class="formulario">
+         <label for="name">Nome:</label>
+         <input type="text" id="name">
+         <label for="email" id="email">E-mail:</label>
+         <input type="email" id="email" placeholder="nome@dominio.com">
+         <label for="cel">Celular:</label>
+         <input type="tel" id="cel" placeholder="(_)_____-____">
+         <label for="convenio">Convênio:</label>
+         <select name="convenio">
+            <option value selected disabled hidden>Escolha um convênio</option>
+            <option value="ASSPB">Associação Securitária dos Servidores Públicos Beneficente</option>
+            <option value="Bradesco">Bradesco Saúde</option>
+            <option value="Danamed">Danamed</option>
+            <option value="GreenLine">GreenLine</option>
+            <option value="Mediservice">Mediservice</option>
+            <option value="New">New Leader Saúde</option>
+            <option value="Notredame">NotreDame Intermédica</option>
+            <option value="Prevent">Prevent Senior</option>
+            <option value="outro">Outro</option>
+            <option value="particular">Particular</option>
+         </select>
+         <label for="mensagem">Mensagem:</label>
+         <textarea id="mensagem" placeholder="Como podemos ajudar?"></textarea>
+         <p>Ao clicar em "Enviar", você concorda que leu e concordou com a <a href="privacidade.html" target="_blank">política de privacidade do site</a>, bem como o uso dos cookies.</p>
+         <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+      </form>
+   </div>
+
+   <div class="container">
+      <div class="grid-8 contato-informacoes">
+         <p>Avenida Samuel Martins, 87 | Vila Progresso</p>
+         <p>Jundiaí-SP | 13202-251 | Brasil</p>
+         <p>(11) 98298-6269</p>
+      </div>
+      <div class="grid-8 contato-informacoes-direita">
+         <p><b>Horário de Funcionamento:</b></p>
+         <p>Segunda a sexta| 08h às 21h</p>
+         <p>Sábado | 08h às 13h</p>
+         <p>Redes Sociais:</p>
+         <a href="https://www.facebook.com/newlife.centroterapeutico.jundiai" target="_blank"><img src="img/facebook.png" alt="Icone do facebook"></a>
+         <a href="https://www.instagram.com/newlife.centroterapeutico/" target="_blank"><img src="img/instagram.png" alt="Icone do Instagram"></a>
+      </div>
+   </div>
+
+   <footer class="rodape">
+      <div class="container">
+         <div class="grid-1-3 logo-rodape">
+            <a href="index.html"><img src="img/Logo Vertical (branco).png" alt="Logo da New Life na cor branca"></a>
+         </div>
+         <div class="grid-1-3 coluna-central">
+            <p><strong>Clínica de Psicologia, Psicopedagogia e Neuropsicologia</strong></p>
+            <p>@2021 Copyright</p>
+            <p>(11) 98298-6269 – Avenida Samuel Martins, 87 | Vila Progresso</p>
+            <p>Jundiaí – SP | 13202-251 | Brasil</p>
+         </div>
+         <div class="grid-1-3 icones-redes">
+            <p><strong>Horário de Funcionamento:</strong></p>
+            <p>Segunda a sexta | 08h às 21h</p>
+            <p>Sábado | 08h às 13h</p>
+            <p>Redes Sociais:</p>
+            <a href="https://www.facebook.com/newlife.centroterapeutico.jundiai" target="_blank"><img src="img/facebook-footer.png" alt="Icone do facebook na cor marrom claro"></a>
+            <a href="https://www.instagram.com/newlife.centroterapeutico/" target="_blank"><img src="img/instagram-footer.png" alt="Ícone do Instagram na cor marrom claro"></a>
+            <p id="creditos">Desenvolvido por <a href="https://www.beetsjr.com.br/" target="_blank">Beets Jr.</a></p>
+         </div>
+      </div>
+   </footer>
+
+</body>
+</html>
