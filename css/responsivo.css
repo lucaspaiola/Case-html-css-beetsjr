@@ -6,6 +6,10 @@
 }
 
 /* Index */
+.introducao {
+   background-size: 110%;
+}
+
 .introducao h1, .introducao h2 {
    margin-right: 0px;
 }
@@ -13,6 +17,23 @@
 .descricao-introducao p {
    padding-right: 150px;
    padding-left: 20px;
+}
+
+/* Servicos */
+.descricao-servicos p {
+   padding: 0px 0 0 10px;
+   margin: 0 30px 0 30px;
+}
+
+.descricao2-servicos p {
+   margin: -210px 0px 0 400px;
+   padding: 0px;
+}
+
+.descricao-servicos img {
+   width: 420px;
+   height: 280px;
+   margin-left: 0px;
 }
    
 }
@@ -42,7 +63,7 @@
 
 .cabecalho-superior a {
    font-size: 13px;
-   margin: 0 0 0 30px;
+   margin: 0 0 0px 30px;
    padding: 10px 20px 10px 20px;
    border-radius: 20px;
 }
@@ -52,7 +73,7 @@
 }
 
 .cabecalho-menu ul {
-   margin-right: 0px;
+   margin-right: 2px;
    margin-top: -50px;
 }
 
@@ -61,6 +82,10 @@
 }
 
 /* Index */
+.introducao {
+   background-size: 140%;
+}
+
 .descricao-introducao p {
    font-size: 15px;
    padding: 0 180px 10px 80px;
@@ -117,22 +142,17 @@
    margin-left: 20px;
 }
 
-
-
-
-
-
 /* Contato */
 .contato h2::after {
    margin: -15px auto 0 auto;
 }
 
 .formulario input, .formulario textarea {
-   width: 650px;
+   width: 95%;
 }
 
 .formulario select {
-   width: 650px;
+   width: 95%;
 }
 
 .contato-formulario p {
@@ -158,23 +178,32 @@
 /* Servicos */
 .descricao-servicos p {
    padding: 30px 80px 30px 60px;
+   margin: 0;
    font-size: 15px;
 }
 
 .descricao-servicos img {
    width: 350px;
    height: 200px;
-   margin: 0 0 0 180px;
+   margin: 0 auto 0 auto;
 }
 
 .descricao2-servicos p {
-   text-align: center;
-   margin: 0px;
+   text-align: left;
+   margin: -130px 0 50px 380px;
    padding: 0px;
 }
 
 .atendimentos-servicos {
    margin-top: 70px;
+}
+
+.atendimentos-servicos h2::before {
+   display: none;
+}
+
+.atendimentos-servicos h2::after {
+   display: none;
 }
 
 .atendimentos-servicos h3 {
@@ -188,16 +217,13 @@
 }
 
 .consultorio-servicos img {
-   width: 293px;
-   height: 265px;
-   border-radius: 55px;
-   padding: 40px;
+   width: 253px;
+   height: 225px;
+   border-radius: 45px;
+   padding: 10px;
    margin-bottom: 0px;
-   margin-left: -45px;
+   margin-left: -5px;
 }
-
-
-
 
 /* Footer */
 .rodape p, .rodape strong {
@@ -210,7 +236,276 @@
 /* Estilo para smartphone */
 @media only screen and (max-width: 787px) {
 
+.cabecalho-menu {
+   display: none;
+}
+
+label span {
+   display: block;
+}
+
+/* Header Superior */
+.cabecalho-superior {
+   padding: 10px 0 5px 0;
+}
+
+.cabecalho-superior p {
+   font-size: 10px;
+}
+
+.cabecalho-superior p:nth-child(1) {
+   margin: -10px auto 0px auto;
+   text-align: center;
+}
+
+.cabecalho-superior p:nth-child(2) {
+   padding: 30px 0 0px 0;
+   margin: 0;
+   text-align: left;
+}
+
+.cabecalho-superior a {
+   padding: 5px 20px 5px 20px;
+   font-size: 10px;
+   margin: 0px -20px 0px 185px;
+}
+
+.botao-header {
+   margin-top: -20px;
+}
+
+/* Header central */
+.cabecalho-central img {
+   width: 60%;
+   height: 60%;
+   margin: 30px 0 0 -10px;
+}
+
+/* Index */
+.introducao {
+   background-size: 235%;
+}
+
+.introducao h1 {
+   font-size: 26.6px;
+   padding-top: 180px;
+   margin-right: -40px;
+   line-height: 31.92px;
+}
+
+.introducao h2 {
+   margin-right: -90px;
+   padding-right: 50px;
+   line-height: 22px;
+}
+
+.descricao-introducao {
+   background-position: bottom right;
+   height: 297px;
+}
+
+.descricao-introducao p {
+   padding: 0px 0 10px 0;
+   margin-left: -50px;
+   margin-right: -50px;
+   font-size: 12px;
+   line-height: 19.4px;
+}
+
+.atendimentos-introducao h2::before {
+   display: none;
+}
+
+.atendimentos-introducao h2::after {
+   display: none;
+}
+
+.atendimentos-introducao ul li {
+   padding: 30px 20px 20px 40px;
+}
+
+.atendimentos-introducao ul li p {
+   font-size: 12px;
+   margin: -35px 0 20px 60px;
+}
+
+.convenios-introducao {
+   padding: 50px 0 20px 0;
+}
+
+.convenios-introducao h2::after {
+   margin: -15px auto 0 auto;
+}
+
+.convenios-introducao h3 {
+   font-size: 12px;
+}
+
+.consultorio-introducao {
+   height: 980px;
+   margin-bottom: 30px;
+}
+
+.consultorio-introducao a {
+   padding: 10px 22px 10px 22px;
+   margin: 0px 0 0 105px;
+   font-size: 12px;
+   border-radius: 25px;
+}
+
+.solicitar-consulta {
+   height: 20px;
+}
+
+.solicitar-consulta a {
+   margin: 0px 0 0px 77px;
+   padding: 10px 20px 10px 20px;
+   font-size: 12px;
+}
+
+/* Servicos */
+.descricao-servicos p {
+   padding: 0px 15px 0 15px;
+   line-height: 19.4px;
+   font-size: 12px;
+   text-align: center;
+   margin: 30px 20px 0 20px;
+}
+
+.descricao-servicos img {
+   width: 70%;
+   height: 70%;
+   margin: 30px 0 0 50px;
+}
+
+.descricao2-servicos p {
+   text-align: center;
+   margin: 20px -90px 0 -90px;
+}
+
+.atendimentos-servicos {
+   margin-top: 50px;
+}
+
+.atendimentos-servicos h2::before, .atendimentos-servicos h2::after {
+   display: none;
+}
+
+.atendimentos-servicos ul li {
+   padding: 50px 20px 0px 30px;
+}
+
+.atendimentos-servicos h3 {
+   font-size: 16px;
+   margin: -50px 0 0px 55px;
+}
+
+.atendimentos-servicos p {
+   line-height: 19.4px;
+   font-size: 12px;
+   padding: 20px 0 0 0;
+   margin: 0 -10px 0 -10px;
+   text-align: center;
+}
+
+.consultorio-servicos h2 {
+   font-size: 25px;
+   padding: 70px 0 5px 0;
+}
+
+.consultorio-servicos p {
+   font-size: 12.6px;
+}
+
+.consultorio-servicos img {
+   width: 120%;
+   height: 275px;
+   border-radius: 65px;
+   padding: 40px;
+   margin: 0px 0 -50px -28px;
+}
+
+/* Contato */
+.contato h2 {
+   font-size: 25px;
+   margin: 30px 0 0px 0;
+}
+
+.contato p {
+   padding: 25px 0px 20px 0px;
+   margin: 0 -60px 0 -60px;
+   font-size: 12px;
+   line-height: 19.4px;
+}
+
+.formulario {
+   padding: 20px 0 70px 0px;
+}
+
+.formulario input, .formulario textarea {
+   width: 100%;
+   height: 36px;
+}
+
+.formulario select {
+   width: 100%;
+}
+
+.formulario textarea {
+   height: 150px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   color: #9e9e9e;
+}
+
+.contato-formulario p {
+   margin: -20px -60px 0 0px; 
+}
+
+.contato-informacoes p, .contato-informacoes-direita p {
+   font-size: 12px;
+   text-align: center;
+}
+
+.contato-informacoes-direita {
+   text-align: center;
+   margin-top: 30px;
+   margin-left: 0px;
+}
+
+.contato-informacoes {
+   padding: 0px;
+}
 
 
+
+
+
+/* Footer */
+.rodape p, .rodape strong {
+   font-size: 12px;
+   padding: 0px 0 10px 0;
+   line-height: 19px;
+}
+
+.endereco-footer {
+   margin-top: 20px;
+}
+
+.redes-sociais-footer {
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+
+.logo-rodape img {
+   margin: -10px 0 -40px 0;
+}
+
+.coluna-central p, .icones-redes {
+   margin-left: -60px;
+}
+
+#creditos {
+   font-size: 10px;
+}
 
 }

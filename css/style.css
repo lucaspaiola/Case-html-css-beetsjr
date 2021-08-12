@@ -65,6 +65,12 @@ header {
    width: 215px;
    height: 75px;
    margin: 30px 0 0 -10px;
+   transition: .3s;
+}
+
+.cabecalho-central img:hover {
+   opacity: 0.7;
+   transition: .3s;
 }
 
 .cabecalho-menu {
@@ -102,6 +108,65 @@ header {
 
 #ativo:hover {
    background-color: #657240;
+}
+
+/* Menu hamburguer */
+#checkbox-menu{
+   position: absolute;
+   opacity: 0;
+}
+
+label{
+   cursor: pointer;
+   position: relative;
+   display: block;
+   height: 20px;
+   width: 25px;
+}
+
+label span{
+   position: absolute;
+   display: none;
+   height: 4px;
+   width: 100%;
+   border-radius: 30px;
+   background: #494c4f;
+   transition: 0.25s ease-in-out;
+   margin: -60px 0px 0 350px;
+}
+
+label span:nth-child(1){
+   top: 0;
+}
+
+label span:nth-child(2){
+   top: 8px;
+}
+
+label span:nth-child(3){
+   top: 16px;
+}
+
+label span:nth-child(4){
+   top: 24px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+   transform: rotate(-45deg);
+   top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+   opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+   transform: rotate(45deg);
+   top:8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(4){
+   opacity: 0;
 }
 
 /* Index */
@@ -149,7 +214,7 @@ header {
    margin-left: -30px;
    font-size: 18px;
    font-family: Roboto,Helvetica,Arial,sans-serif;
-   color: #414141;
+   color: #525252;
    line-height: 29px;
 }
 
@@ -203,10 +268,14 @@ header {
 }
 
 .atendimentos-introducao ul li {
-   padding: 30px 20px 20px 40px;
+   padding: 30px 20px 50px 40px;
+}
+
+.atendimentos-introducao ul li p {
    font-family: Roboto,Helvetica,Arial,sans-serif;
    color: #525252;
    font-size: 18px;
+   margin: -35px 0 0 60px;
 }
 
 .atendimentos-introducao h2 {
@@ -370,7 +439,8 @@ header {
 
 .descricao2-servicos p {
    text-align: left;
-   margin: -210px -190px 0 250px;
+   margin: -210px 0px 50px 250px;
+   padding: 0 0 0 170px;
 }
 
 .descricao2-servicos strong {
@@ -391,9 +461,47 @@ header {
    padding: 10px;
 }
 
+.atendimentos-servicos h2 {
+   margin-bottom: 40px;
+   color: #6d5306;
+   font-size: 29px;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.atendimentos-servicos h2::before {
+   content: "";
+   display: block;
+   width: 420px;
+   height: 1px;
+   background: #b2b2b2;
+   border: 2px dashed #fff;
+   margin: 0 0 -18px -35px;
+}
+
+.atendimentos-servicos h2::after {
+   content: "";
+   display: block;
+   width: 420px;
+   height: 1px;
+   background: #b2b2b2;
+   border: 2px dashed #fff;
+   margin: -18px 0 0px 570px;
+}
+
+.atendimentos-servicos ul li {
+   padding: 50px 20px 50px 30px;
+}
+
+.atendimentos-servicos img {
+   width: 40px;
+}
+
 .atendimentos-servicos p {
    line-height: 29px;
-   padding: 10px 0 0 0;
+   font-family: Roboto,Helvetica,Arial,sans-serif;
+   color: #525252;
+   font-size: 18px;
+   padding: 20px 0 0 0;
 }
 
 .consultorio-servicos h2 {
@@ -414,7 +522,7 @@ header {
    height: 275px;
    border-radius: 65px;
    padding: 40px;
-   margin-bottom: 20px;
+   margin: 0 0 20px -30px;
 }
 
 /* Contato */
@@ -433,7 +541,7 @@ header {
    height: 13px;
    background: #afc666;
    border-radius: 15px;
-   margin: -15px 0 0 333px;
+   margin: -15px auto 0 auto;
 }
 
 .contato p {
@@ -459,7 +567,7 @@ header {
 .formulario input, .formulario textarea {
    width: 798px;
    height: 36px;
-   padding: 7px px 0 0;
+   padding: 7px 0 0 0;
    margin: 10px 0 30px 5px;
    display: block;
    background-color: #00000000;
@@ -542,7 +650,7 @@ header {
 
 .contato-informacoes-direita img {
    width: 30px;
-   margin-right: 20px;
+   margin-right: 10px;
    transition: .3s;
 }
 
@@ -651,10 +759,9 @@ header {
 
 .icones-redes img {
    width: 30px;
-   margin-right: 20px;
+   margin-right: 10px;
    transition: .3s;
 }
-
 
 #creditos {
    font-size: 15px;
