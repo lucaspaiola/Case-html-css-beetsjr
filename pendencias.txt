@@ -1,3 +1,0 @@
-- arrumar o espaco das listas com fundo "rosa"
-- ver se existem css que podem ser juntados em um geral
-- bolinha de subir ate o topo
