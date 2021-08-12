@@ -26,9 +26,12 @@
 
    <header class="cabecalho-central">
       <div class="container">
-         <a href="index.html"><img src="img/Logo Horizontal (colorido)-header.png" alt="Logo da New Life"></a>
-         <nav class="cabecalho-menu">
-            <ul>
+         <a href="index.html"><img src="img/LogoHorizontal(colorido)-header.png" alt="Logo da New Life"></a>
+         <nav id="nav" class="cabecalho-menu">
+            <button id="btn-mobile">
+               <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
                <li><a href="index.html">Home</a></li>
                <li><a href="#">Quem somos</a></li>
                <li><a href="servicos.html">Serviços</a></li>
@@ -48,11 +51,11 @@
       <form id="contato_form" class="formulario">
          <label for="name">Nome:</label>
          <input type="text" id="name">
-         <label for="email" id="email">E-mail:</label>
+         <label for="email">E-mail:</label>
          <input type="email" id="email" placeholder="nome@dominio.com">
          <label for="cel">Celular:</label>
          <input type="tel" id="cel" placeholder="(_)_____-____">
-         <label for="convenio">Convênio:</label>
+         <label>Convênio:</label>
          <select name="convenio">
             <option value selected disabled hidden>Escolha um convênio</option>
             <option value="ASSPB">Associação Securitária dos Servidores Públicos Beneficente</option>
@@ -92,7 +95,7 @@
    <footer class="rodape">
       <div class="container">
          <div class="grid-1-3 logo-rodape">
-            <a href="index.html"><img src="img/Logo Vertical (branco).png" alt="Logo da New Life na cor branca"></a>
+            <a href="index.html"><img src="img/LogoVertical(branco).png" alt="Logo da New Life na cor branca"></a>
          </div>
          <div class="grid-1-3 coluna-central">
             <p><strong>Clínica de Psicologia, Psicopedagogia e Neuropsicologia</strong></p>
@@ -115,6 +118,8 @@
          </div>
       </div>
    </footer>
+
+   <script src="./js/script.js"></script>
 
 </body>
 </html>

@@ -111,63 +111,10 @@ header {
 }
 
 /* Menu hamburguer */
-#checkbox-menu{
-   position: absolute;
-   opacity: 0;
-}
-
-label{
-   cursor: pointer;
-   position: relative;
-   display: block;
-   height: 20px;
-   width: 25px;
-}
-
-label span{
-   position: absolute;
+#btn-mobile {
    display: none;
-   height: 4px;
-   width: 100%;
-   border-radius: 30px;
-   background: #494c4f;
-   transition: 0.25s ease-in-out;
-   margin: -60px 0px 0 350px;
 }
 
-label span:nth-child(1){
-   top: 0;
-}
-
-label span:nth-child(2){
-   top: 8px;
-}
-
-label span:nth-child(3){
-   top: 16px;
-}
-
-label span:nth-child(4){
-   top: 24px;
-}
-
-#checkbox-menu:checked + label span:nth-child(1){
-   transform: rotate(-45deg);
-   top: 8px;
-}
-
-#checkbox-menu:checked + label span:nth-child(2){
-   opacity: 0;
-}
-
-#checkbox-menu:checked + label span:nth-child(3){
-   transform: rotate(45deg);
-   top:8px;
-}
-
-#checkbox-menu:checked + label span:nth-child(4){
-   opacity: 0;
-}
 
 /* Index */
 
@@ -581,7 +528,7 @@ label span:nth-child(4){
    color: #525252;
    width: 798px;
    height: 36px;
-   padding: 7px px 0 0;
+   padding: 7px 0 0 0;
    margin: 10px 0 20px 0;
    display: block;
    border-radius: 15px;
@@ -622,10 +569,7 @@ label span:nth-child(4){
 
 .btn:hover {
    box-shadow: 1px 3px 10px #9e9e9e;
-}
-
-.btn:hover {
-   box-shadow: #525252;
+   cursor: pointer;
 }
 
 /* Contato - informacoes */
@@ -683,6 +627,7 @@ label span:nth-child(4){
 .privacidade ol li a {
    color: #6f9202;
    transition: .1s;
+   word-wrap: break-word;
 }
 
 .privacidade ol li a:hover {
@@ -705,12 +650,13 @@ label span:nth-child(4){
    font-size: 33px;
 }
 
-#p-privacidade-intro {
+#p-privacidade-intro, #p-privacidade-intro2 {
    margin: 0 0 10px 20px;
 }
 
 .privacidade p {
-   margin: 10px 0 10px 20px;
+   padding: 10px 0 10px 20px;
+   margin: 0 auto;
 }
 
 .p-superior {
@@ -782,7 +728,7 @@ label span:nth-child(4){
 [data-slide] > .active {
    position: relative;
    opacity: 1;
-   transition: fade-in 500ms;
+   transition: 500ms;
    z-index: 1;
 }
  
