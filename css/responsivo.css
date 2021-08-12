@@ -81,6 +81,7 @@
    border: none;
    background: none;
    cursor: pointer;
+   float: right;
 }
 
 #hamburguer {
@@ -187,6 +188,7 @@
 .atendimentos-introducao h2::after {
    width: 280px;
    margin-left: 480px;
+   float: right;
 }
 
 .convenios-introducao h2::after {
