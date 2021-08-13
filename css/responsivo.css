@@ -118,7 +118,7 @@
    position: absolute;
    width: 750px;
    height: 215px;
-   top: 165px;
+   top: 50px;
    left: 0;
    background-color: white;
    z-index: 1000;
@@ -400,7 +400,7 @@
    position: absolute;
    width: 440px;
    height: 215px;
-   top: 165px;
+   top: 50px;
    margin-left: -70px;
    background-color: white;
    z-index: 1000;
@@ -672,7 +672,7 @@
 }
 
 /* Estilo para smartphones de telas menores */
-@media only screen and (max-width: 499px) {
+@media only screen and (min-width: 300px)and (max-width: 499px) {
 
 /* Header Superior */
 .cabecalho-superior {
@@ -754,7 +754,7 @@
    position: absolute;
    width: 300px;
    height: 215px;
-   top: 145px;
+   top: 45px;
    left: 0;
    background-color: white;
    z-index: 1000;

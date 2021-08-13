@@ -74,24 +74,23 @@ header {
 }
 
 .cabecalho-menu {
-   text-align: right;
+   float: right;
 }
 
 .cabecalho-menu ul {
-   margin-right: -60px;
-   margin-top: -50px;
+   margin: 58px -70px 0 0;
 }
 
 .cabecalho-menu ul li {
    display: inline-block;
    font-family: Roboto,Helvetica,Arial,sans-serif;
+   margin: 0 -2px 0 -2px;
 }
 
 .cabecalho-menu ul li a {
    color: #64722f;
    padding: 12px;
    font-weight: bold;
-   margin: 0 -2px 0 -2px;
    transition: .3s;
 }
 
