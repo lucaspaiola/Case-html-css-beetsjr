@@ -38,9 +38,282 @@
    
 }
 
+/* Modelo para tablets maiores */
+@media only screen and (min-width: 980px) and (max-width: 1057px) {
+
+.cabecalho-superior {
+   padding-top: 25px;
+}
+
+.cabecalho-superior p:nth-child(1) {
+   margin-left: 0px;
+}
+
+.cabecalho-superior p:nth-child(2) {
+   margin-left: 50px;
+   margin-right: 0px;
+}
+
+.cabecalho-superior p {
+   font-size: 13px;
+   font-weight: 400;
+   margin: 0px 0 0 0;
+}
+
+.cabecalho-superior a {
+   font-size: 13px;
+   margin: 0 0 0px 30px;
+   padding: 10px 20px 10px 20px;
+   border-radius: 20px;
+}
+
+.cabecalho-central img {
+   margin-left: 10px;
+}
+
+/* Menu hamburguer */
+#btn-mobile {
+   display: flex;
+   margin: 50px 50px 0 0px;
+   border: none;
+   background: none;
+   cursor: pointer;
+   float: right;
+}
+
+#hamburguer {
+   width: 20px;
+   border-top: 2px solid;
+}
+
+#hamburguer::after, #hamburguer::before {
+   content: "";
+   display: block;
+   width: 20px;
+   height: 2px;
+   background-color: currentColor;
+   margin-top: 5px;
+   transition: .3s;
+   position: relative;
+}
+
+#nav.active #hamburguer {
+   border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+   transform: rotate(45deg)
+}
+
+#nav.active #hamburguer::after {
+   transform: rotate(-45deg);
+   top: -7px;
+}
+
+#menu {
+   display: none;
+   position: absolute;
+   width: 950px;
+   height: 215px;
+   top: 50px;
+   left: 0;
+   background-color: white;
+   z-index: 1000;
+}
+
+#menu a {
+   margin: 0px;
+   padding: 12px 0px 12px 50px;
+   transition: .4s;
+   display: block;
+   width: 950px;
+}
+
+#menu a:hover {
+   background-color: rgba(79, 105, 0, 0.7);
+   color: white;
+}
+
+#menu #ativo {
+   background-color: #6f9202;
+}
+
+#menu #ativo:hover {
+   opacity: 0.8;
+}
+
+#menu li {
+   padding: 0px 0px 0px 0px;
+   margin: 0 0 0px 0;
+   display: block;
+   width: 950px;
+   border-top: 1px solid #9e9e9e;
+}
+
+#menu li:nth-child(1) {
+   border-top: none;
+}
+
+#nav.active #menu {
+   display: block;
+   text-align: left;
+}
+
+/* Index */
+.introducao {
+   background-size: 140%;
+}
+
+.descricao-introducao p {
+   font-size: 15px;
+   padding: 0 180px 10px 80px;
+}
+
+.introducao h1, .introducao h2 {
+   margin-right: 40px;
+}
+
+.lista-atendimentos ul li {
+   display: block;
+}
+
+.atendimentos-introducao h2::before {
+   width: 375px;
+   margin-left: 10px;
+}
+
+.atendimentos-introducao h2::after {
+   width: 380px;
+   margin-left: 480px;
+   float: right;
+}
+
+.convenios-introducao h2::after {
+   margin: -15px auto 0 auto;
+}
+
+.consultorio-introducao img {
+   width: 300px;
+   border-radius: 50px;
+   padding: 10px;
+   margin: 0 0px 0 15px;
+}
+
+.consultorio-introducao a {
+   padding: 12px 22px 12px 22px;
+   border-radius: 20px;
+   margin: 0px 0 0px 420px;
+   font-size: 15px;
+}
+
+#ultima-foto {
+   margin-bottom: 30px;
+}
+
+.solicitar-consulta a {
+   margin: 0px 0 0px 368px;
+}
+
+.convenios-introducao ul li img {
+   width: 200px;
+   margin-left: 20px;
+}
+
+/* Contato */
+.contato h2::after {
+   margin: -15px auto 0 auto;
+}
+
+.formulario input, .formulario textarea {
+   width: 95%;
+}
+
+.formulario select {
+   width: 95%;
+}
+
+.contato-formulario p {
+   padding-right: 150px; 
+}
+
+.contato-informacoes {
+   margin-right: 20px;
+   margin-left: 180px;
+   text-align: center;
+}
+
+.contato-informacoes p, .contato-informacoes-direita p {
+   font-size: 15px;
+}
+
+.contato-informacoes-direita {
+   text-align: center;
+   margin-top: 30px;
+   margin-left: 210px;
+}
+
+/* Servicos */
+.descricao-servicos p {
+   padding: 30px 80px 30px 60px;
+   margin: 0;
+   font-size: 15px;
+}
+
+.descricao-servicos img {
+   width: 350px;
+   height: 200px;
+   margin: 0 auto 0 auto;
+}
+
+.descricao2-servicos p {
+   text-align: left;
+   margin: -130px 0 50px 380px;
+   padding: 0px;
+}
+
+.atendimentos-servicos {
+   margin-top: 70px;
+}
+
+.atendimentos-servicos h2::before {
+   width: 375px;
+   margin-left: 10px;
+}
+
+.atendimentos-servicos h2::after {
+   width: 380px;
+   margin-left: 480px;
+   float: right;
+}
+
+.atendimentos-servicos h3 {
+   font-size: 20px;
+}
+
+.atendimentos-servicos p {
+   font-size: 15px;
+   text-align: center;
+   line-height: 24px;
+}
+
+.consultorio-servicos img {
+   width: 300px;
+   height: 250px;
+   border-radius: 45px;
+   padding: 10px;
+   margin-bottom: 0px;
+   margin-left: -5px;
+}
+
+/* Footer */
+.rodape p, .rodape strong {
+   font-size: 15px;
+}
+}
+
 
 /* Modelo para tablet */
-@media only screen and (min-width: 788px) and (max-width: 1057px) {
+@media only screen and (min-width: 788px) and (max-width: 979px) {
 
 /* Header */
 
